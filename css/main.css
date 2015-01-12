@@ -21,8 +21,45 @@ body {
     background-color: black;
 }
 
+.main {
+    text-align: center;
+}
+
 .clock-face {
     background-image: url(../images/clock-face.svg);
     width: 300px;
     height: 300px;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: calc(50% - 14px);
+    left: calc(50% - 14px);
+    width: 28px;
+}
+
+.hand-hour {
+     position: absolute;
+     bottom: 50%;
+     left: calc(50% - 7px);
+     width: 14px;
+}
+
+.hand-minute {
+     position: absolute;
+     bottom: 50%;
+     left: calc(50% - 7px);
+     width: 14px;
+}
+
+.clock-face:hover .hand-minute {
+    transform: rotate(360deg);
+    transition: all 1000ms linear;
+}
+
+.btn-forwards {
+}
+
+.btn-backwards {
 }
